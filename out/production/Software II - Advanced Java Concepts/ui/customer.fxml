@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1345.0" style="-fx-background-color: #98FB98;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Customer">
+   <children>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="44.0" prefWidth="1345.0" style="-fx-spacing: 10px;">
+        <items>
+            <Button layoutX="10.0" layoutY="13.0" mnemonicParsing="false" onAction="#reportsButtonClick" text="Reports" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;">
+               <font>
+                  <Font name="CiscoSans-Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#appointmentsButtonClick" text="Appointments" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;">
+               <font>
+                  <Font name="CiscoSans-Bold" size="18.0" />
+               </font>
+            </Button>
+        </items>
+         <padding>
+            <Insets left="25.0" />
+         </padding>
+      </ToolBar>
+      <TableView fx:id="tblCustomer" layoutX="22.0" layoutY="140.0" prefHeight="560.0" prefWidth="1301.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="37.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="249.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="387.0" text="Address" />
+            <TableColumn fx:id="colPostCode" minWidth="0.0" prefWidth="113.0" text="Postal Code" />
+            <TableColumn fx:id="colPhone" prefWidth="158.0" text="Phone" />
+            <TableColumn fx:id="colCountry" prefWidth="155.0" text="Country" />
+            <TableColumn fx:id="colDivision" prefWidth="197.0" text="Division" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" layoutX="22.0" layoutY="97.0" prefHeight="45.0" prefWidth="1301.0" style="-fx-background-color: #E5E9EA; -fx-border-color: #ABABAB;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#newButtonClick" text="New" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;">
+               <HBox.margin>
+                  <Insets left="5.0" right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#editButtonClick" text="Edit" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteClickHandler" text="Delete" style="-fx-background-color: #24a0ed; -fx-text-fill: white; -fx-border-radius: 5; -fx-border-width: 2; -fx-border-color: #24a0ed;">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="lblError" layoutX="22.0" layoutY="60.0" prefHeight="25.0" prefWidth="836.0" textFill="RED">
+         <font>
+            <Font name="CiscoSans" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="1075.0" layoutY="60.0" prefHeight="25.0" prefWidth="248.0" promptText="Search customers by any property" />
+   </children>
+</AnchorPane>
