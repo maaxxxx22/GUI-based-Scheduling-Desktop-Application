@@ -1,4 +1,4 @@
-## \# Project Overview
+# Project Overview
 
 The main objective of this project is to develop a user-friendly and
 efficient desktop application that enables the organization to schedule
@@ -11,7 +11,7 @@ tables and a Contacts table prepopulated by our company, with
 administrative functions for adding users handled by our IT support
 staff.
 
-## \## Deliverables
+## Deliverables
 
 1.  A fully functional GUI-based scheduling desktop application that
     meets the specific business requirements outlined by the
@@ -33,7 +33,7 @@ staff.
     Javadoc comments, and user manuals.
 7.  Deliver the application's source code.
 
-## \## Dependencies
+## Dependencies
 
 -   IntelliJ IDEA 2022.2.2 -
     https://blog.jetbrains.com/idea/2022/09/intellij-idea-2022-2-2/
@@ -43,7 +43,7 @@ staff.
 -   mysql-connector-java-8.0.32 -
     https://dev.mysql.com/downloads/connector/j/?os=26
 
-## \## How to Run
+## How to Run
 
 ##### (IntelliJ IDEA)
 
@@ -100,7 +100,7 @@ F.) *Run application*
 1.  Click Run on the toolbar to run the application.
 2.  Once launched, username - test, password - test
 
-## \## Generate Reports
+## Generate Reports
 
 To generate reports in the application, navigate to the Reports window
 by clicking on the Reports button located on the main screen. In the
@@ -119,7 +119,7 @@ name.
     appointment ID, title, description, start date and time, end date
     and time, and customer ID
 
--   ## \## Contact
+## Contact
 
     Name: Okunta Braide Email: obraid1@wgu.edu date: 03/07/2023
     application version: 1.0
